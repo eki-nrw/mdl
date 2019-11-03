@@ -1,0 +1,106 @@
+claiming:
+    name: ~
+    type: ~
+        class: ~
+    participants:
+        publisher:
+            name: ~
+            class: ~
+        deliverer: 
+            name:
+            class:
+        receiver:
+            name:
+            class:
+    claim:
+        class: ~
+        attributes:
+            name:
+                type:
+                implementation:
+            a1:
+                type:
+                implementation:
+            a2:
+                type:
+                implementation:
+        properties:
+            prop1:
+                type:
+                implementation:
+            prop2:
+                type:
+                implementation:
+        code:
+            strategy:
+            init_value:
+    operations:
+        actions:
+            action1:
+                from:
+                to:
+                participants:
+            action2:
+                from:
+                to:
+                participants:
+        states: 
+            init: 
+            published:
+            active:
+            delivered:
+            done:
+    claimable:
+        subjectable:
+            class:
+        originable:
+            class:
+        deliverable:
+            class:
+    set:
+        enabled: ~
+        class:
+        max: ~
+        min: ~
+        operations:
+            actions:
+                open:
+                    from: [init]
+                    to: active
+                    participants: []
+                add:
+                    from: [opened, active]
+                    to: [active]
+                    participants: []
+                remove:
+                    from: [active]
+                    to: [active]
+                    participants: []
+                close:
+                    from: [opened, active]
+                    to: [closed]
+                    participants: []
+                summarize:
+                    from: [active]
+                    to: [active]
+                    participants: []
+            states:
+                init:
+                opened:
+                closed:
+                active:
+    extensions:
+        extension:
+            name:
+            attributes:
+                attrib1:
+                    type:
+                    class:
+                attrib2:
+                    type:
+                    class:
+            properties:
+                prop1:
+                    type:
+                    class:
+                    

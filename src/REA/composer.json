@@ -1,0 +1,32 @@
+{
+    "name": "eki-nrw/mdl-rea",
+    "type": "library",
+    "description": "Resource-Event-Agent Model Library for Ekipower NRW Project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Tien Hy",
+            "email": "ngtienhy@gmail.com"
+        },
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+        "eki-nrw/common": "~0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5",
+    },
+    "replace": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Eki\\NRW\\Mdl\\REA\\": "",
+        },
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }    
+}
